@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置黑体（Windows系统自带）
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
-# ✅ 修改点1：设置正确的样式名称
-plt.style.use('ggplot')  # 改用Matplotlib内置样式（无需安装）
+
+plt.style.use('ggplot')  # 用Matplotlib内置样式（无需安装）
 
 # 加载数据
 df = pd.read_csv('tensile_test.csv', encoding='gbk')  # 适用于中文Windows生成的CSV
